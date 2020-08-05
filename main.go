@@ -14,6 +14,7 @@ import (
 	//	k8sclient "github.com/projectrelated/k8sswitcher/k8sclient"
 )
 
+//ClusterConfig sdklfjsdkfljskldfjklsdjfklsdjf
 type ClusterConfig struct {
 	Clusters []struct {
 		Name    string `yaml:"name"`
