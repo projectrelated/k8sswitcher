@@ -1,0 +1,8 @@
+time="2020-05-09T13:30:16+12:00" level=info msg="Test Logging"
+time="2020-05-09T13:42:27+12:00" level=info msg="Info log test"
+time="2020-05-09T13:42:27+12:00" level=info msg="Debug Test"
+time="2020-05-09T13:58:43+12:00" level=info msg="info log"
+time="2020-05-09T13:58:43+12:00" level=warning msg="warn logsdfsdfsdf"
+time="2020-05-09T14:43:23+12:00" level=fatal msg="error converting YAML to JSON: yaml: line 2: found a tab character that violates indentation"
+time="2020-05-09T14:46:39+12:00" level=fatal msg="error converting YAML to JSON: yaml: line 2: found a tab character that violates indentation"
+time="2020-07-25T17:56:12+12:00" level=info msg="got data map[interface {}]interface {}"

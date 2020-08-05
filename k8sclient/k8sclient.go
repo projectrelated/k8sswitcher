@@ -3,8 +3,9 @@ package k8sclient
 import (
 	"flag"
 	"fmt"
-	"log"
 	"path/filepath"
+
+	log "github.com/sirupsen/logrus"
 
 	"github.com/mitchellh/go-homedir"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -12,7 +13,8 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 )
 
-func g() {
+//GetNamespace ... get the names space in k8s
+func GetNamespace() (namespacelist []string) {
 
 	var label, field string
 	flag.StringVar(&label, "l", "", "Label selector")
@@ -43,10 +45,11 @@ func g() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
+	var namespaceslice []string
 	for _, names := range namespaces.Items {
+		namespaceslice = append(namespaceslice, names.ObjectMeta.Name)
 		fmt.Println(names.ObjectMeta.Name)
 	}
-
-	//fmt.Println(namespaces.Items)
+	fmt.Println("namespaceslice", namespaceslice)
+	return namespaceslice
 }

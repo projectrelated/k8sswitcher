@@ -1,0 +1,20 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: sdfsdfsdfsdfsdf
+    server: https://ce-tetsttggg-we-k8s-c49f7c-edd06689.hcp.westeurope.azmk8s.io:443
+  name: ce-test-weeurite
+- cluster:
+    certificate-authority-data: fsdfsdfsdfsdfsdfsdf
+    server: https://ce-gogogo-v3sdfsdfsdfsdfsdf-k8s-021c9e-dd6139b5.hcp.southeastasia.azmk8s.io:443
+  name: ce-test-v9999
+contexts:
+- context:
+    cluster: saas-test
+    user: clusterUser_k8s_saas-test
+  name: saas-test
+- context:
+    cluster: saas-test-aueast
+    user: clusterUser_k8s_saas-test-aueast
+  name: saas-test-aueast
+current-context: ce-test-v4
